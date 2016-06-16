@@ -25,12 +25,24 @@ script:
     - docker version
     - docker images
 
-    # volume create implementation inside main web image will...
-    # 1. create empty volume
-    # 2. git clone the repo into the volume
-    # 3. do a [docker run] on main web image, volume mounting the volume to known folder
-    #    and passing that folder to the manifest checker.
-    - MY_REPO='default-instructions.git'
-    - COMMAND="cd app/docker && ruby cyber-dojo.rb volume create --name=checking --git=https://github.com/cyber-dojo/${MY_REPO}"
-    - echo "docker run --rm cyberdojofoundation/web:${DOCKER_ENGINE_VERSION} sh -c '${COMMAND}"
- 
+    - MY_NAME=default-instructions
+    - MY_URL=https://github.com/cyber-dojo/${MY_NAME}.git
+
+    - git clone --depth=1 --branch=master ${MY_URL} ${MY_NAME}
+
+    - docker volume create
+             --name=${MY_NAME}
+             --label=cyber-dojo-volume=${MY_URL}
+
+    - cid=$(docker run --detach
+                       --interactive
+                       --net=none
+                       --user=root
+                       --volume=${MY_NAME}:/data
+                       cyberdojo/web:${DOCKER_ENGINE_VERSION} sh)
+
+    - docker cp ${MY_NAME}/. ${cid}:/data
+
+    - docker exec ${cid} sh -c "cd /data && rm -rf .git"
+    - docker exec ${cid} sh -c "chown -R cyber-dojo:cyber-dojo /data"
+    - docker exec ${cid} sh -c "cd /usr/src/cyber-dojo/app/lib && ./check_setup_data.rb /data"
