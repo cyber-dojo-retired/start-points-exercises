@@ -22,7 +22,7 @@ script:
     - docker version
     - docker images
 
-    - MY_NAME=default-instructions
+    - MY_NAME=start-point-exercises
     - MY_URL=https://github.com/cyber-dojo/${MY_NAME}.git
 
     - git clone --depth=1 --branch=master ${MY_URL} ${MY_NAME}
