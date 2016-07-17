@@ -42,4 +42,4 @@ script:
 
     - docker exec ${cid} sh -c "cd /data && rm -rf .git"
     - docker exec ${cid} sh -c "chown -R cyber-dojo:cyber-dojo /data"
-    - docker exec ${cid} sh -c "cd /usr/src/cyber-dojo/cli && ./volume_check.rb /data"
+    - docker exec ${cid} sh -c "cd /usr/src/cyber-dojo/cli && ./start_point_check.rb /data"
