@@ -9,6 +9,6 @@ You can specify an alternative git repo as follows:
 
 ```
 ./cyber-dojo start-point create --help
-./cyber-dojo start-point create --name=mike --git=https://github.com/cyber-dojo/start-points-exercises.git
+./cyber-dojo start-point create mike --git=https://github.com/cyber-dojo/start-points-exercises.git
 ./cyber-dojo up --exercises=mike
 ```
