@@ -8,7 +8,7 @@ script:
 
 env:
     global:
-        - DOCKER_ENGINE_VERSION=1.11.2
+        - DOCKER_ENGINE_VERSION=1.12.0
 
 before_install:
 
