@@ -8,7 +8,7 @@ The git repo for [cyber-dojo's](https://github.com/cyber-dojo/web)
 You can specify an alternative git repo as follows:
 
 ```
-./cyber-dojo start-point create --help
-./cyber-dojo start-point create mike --git=https://github.com/cyber-dojo/start-points-exercises.git
-./cyber-dojo up --exercises=mike
+$ ./cyber-dojo start-point create --help
+$ ./cyber-dojo start-point create mike --git=https://github.com/cyber-dojo/start-points-exercises.git
+$ ./cyber-dojo up --exercises=mike
 ```
