@@ -5,10 +5,14 @@
 The git repo for [cyber-dojo's](https://github.com/cyber-dojo/web)
 [setup a new practice session from a <em>default</em> start point] exercises choices.
 
-You can specify an alternative git repo as follows:
+You can specify and use an alternative exercises start-point.
+Assuming https://github.com/mike/start-points-exercises.git has the
+[correct format](http://blog.cyber-dojo.org/2016/08/creating-your-own-start-points.html):
 
 ```
 $ ./cyber-dojo start-point create --help
-$ ./cyber-dojo start-point create mike --git=https://github.com/cyber-dojo/start-points-exercises.git
+$ ./cyber-dojo start-point create mike --git=https://github.com/mike/start-points-exercises.git
 $ ./cyber-dojo up --exercises=mike
 ```
+
+On Linux the ./cyber-dojo commands needs to be sudo'd.
