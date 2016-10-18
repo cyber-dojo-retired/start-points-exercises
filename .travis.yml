@@ -1,45 +1,18 @@
 sudo: required
-
-services:
-  - docker
-
-script:
-  - docker images
+services: docker
+language: generic
 
 env:
     global:
-        - DOCKER_ENGINE_VERSION=1.12.0
+        - DOCKER_ENGINE_VERSION=1.12.2
 
 before_install:
-
-    # list docker-engine versions
-    - apt-cache madison docker-engine
-
-    # upgrade docker-engine to specific version
     - sudo apt-get -o Dpkg::Options::="--force-confnew" install -y docker-engine=${DOCKER_ENGINE_VERSION}-0~trusty
 
 script:
-    - docker version
-    - docker images
-
-    - MY_NAME=start-points-exercises
-    - MY_URL=https://github.com/cyber-dojo/${MY_NAME}.git
-
-    - git clone --depth=1 --branch=master ${MY_URL} ${MY_NAME}
-
-    - docker volume create
-             --name=${MY_NAME}
-             --label=cyber-dojo-volume=${MY_URL}
-
-    - cid=$(docker run --detach
-                       --interactive
-                       --net=none
-                       --user=root
-                       --volume=${MY_NAME}:/data
-                       cyberdojo/web:${DOCKER_ENGINE_VERSION} sh)
-
-    - docker cp ${MY_NAME}/. ${cid}:/data
-
-    - docker exec ${cid} sh -c "cd /data && rm -rf .git"
-    - docker exec ${cid} sh -c "chown -R cyber-dojo:cyber-dojo /data"
-    - docker exec ${cid} sh -c "cd /usr/src/cyber-dojo/cli && ./start_point_check.rb /data"
+    - curl -O https://raw.githubusercontent.com/cyber-dojo/commander/master/cyber-dojo
+    - chmod +x cyber-dojo
+    - my_url=https://github.com/cyber-dojo/start-points-exercises.git
+    - sudo ./cyber-dojo start-point create exercises --git=${my_url}
+    - sudo ./cyber-dojo start-point ls
+    - sudo ./cyber-dojo start-point ls | grep exercises
