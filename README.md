@@ -7,9 +7,9 @@ The git repo for [cyber-dojo's](https://github.com/cyber-dojo/web)
 
 ![exercises](https://3.bp.blogspot.com/-IkjIsRfcXS4/V7QRXI9RheI/AAAAAAAAErQ/inorZPm1odQfZUDXE5lNvw2LzFSbskdmQCLcB/s320/setup_exercises.png)
 
-You can specify and use an alternative exercises.
+You can specify and use an alternative exercises start-point.
 
-Assuming https://github.com/mike/start-points-exercises.git has the
+Assuming the files in the specified repo have the
 [correct format](http://blog.cyber-dojo.org/2016/08/creating-your-own-start-points.html):
 
 ```
