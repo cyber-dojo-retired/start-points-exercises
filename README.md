@@ -17,5 +17,3 @@ $ ./cyber-dojo start-point create --help
 $ ./cyber-dojo start-point create mike --git=https://github.com/mike/start-points-exercises.git
 $ ./cyber-dojo up --exercises=mike
 ```
-
-On Linux the ./cyber-dojo commands needs to be sudo'd.
