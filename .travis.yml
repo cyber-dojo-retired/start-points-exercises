@@ -2,13 +2,6 @@ sudo: required
 services: docker
 language: generic
 
-env:
-    global:
-        - DOCKER_ENGINE_VERSION=1.12.2
-
-before_install:
-    - sudo apt-get -o Dpkg::Options::="--force-confnew" install -y docker-engine=${DOCKER_ENGINE_VERSION}-0~trusty
-
 script:
     - curl -O https://raw.githubusercontent.com/cyber-dojo/commander/master/cyber-dojo
     - chmod +x cyber-dojo
