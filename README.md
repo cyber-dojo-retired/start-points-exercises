@@ -10,7 +10,7 @@
 The git repo for [cyber-dojo's](https://github.com/cyber-dojo/web)
 [setup a new practice session from a <em>default</em> start point] exercises choices.
 
-![exercises](https://3.bp.blogspot.com/-IkjIsRfcXS4/V7QRXI9RheI/AAAAAAAAErQ/inorZPm1odQfZUDXE5lNvw2LzFSbskdmQCLcB/s320/setup_exercises.png)
+<img src="https://github.com/cyber-dojo/start-points-exercises/blob/master/setup_exercises_start_point.png" width="700px"/>
 
 You can specify and use an alternative exercises start-point.
 
