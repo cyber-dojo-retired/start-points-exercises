@@ -1,6 +1,6 @@
 sudo: required
 services: docker
-language: generic
+language: node_js
 
 script:
     - curl -O https://raw.githubusercontent.com/cyber-dojo/commander/master/cyber-dojo
@@ -9,3 +9,8 @@ script:
     - ./cyber-dojo start-point create exercises --git=${my_url}
     - ./cyber-dojo start-point ls
     - ./cyber-dojo start-point ls | grep exercises
+
+    - npm install travis-ci
+    - script=trigger-build.js
+    - curl -O https://raw.githubusercontent.com/cyber-dojo/cyber-dojo/master/shared/${script}
+    - node ${script} cyber-dojo/web
