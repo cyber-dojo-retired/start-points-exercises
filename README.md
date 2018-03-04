@@ -8,7 +8,7 @@
 <img src="https://raw.githubusercontent.com/cyber-dojo/nginx/master/images/home_page_logo.png" alt="cyber-dojo yin/yang logo" width="50px" height="50px"/>
 
 The git repo for [cyber-dojo's](https://github.com/cyber-dojo/web)
-[create new session] exercises choices.
+default exercises choices.
 
 <img src="https://github.com/cyber-dojo/start-points-exercises/blob/master/setup_exercises_start_point.png" width="700px"/>
 
