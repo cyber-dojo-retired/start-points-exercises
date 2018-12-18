@@ -6,22 +6,5 @@ git:
   quiet: true
 
 script:
-    # fast new architecture
-    - ./sh/travis.sh
-
-    # slow old architecture
-    - curl -O https://raw.githubusercontent.com/cyber-dojo/commander/master/cyber-dojo
-    - chmod +x cyber-dojo
-
-    - sudo mkdir /cyber-dojo
-    - sudo chown -R 19663:19663 /cyber-dojo
-
-    - my_url=https://github.com/cyber-dojo/start-points-exercises.git
-    - ./cyber-dojo start-point create exercises --git=${my_url}
-    - ./cyber-dojo start-point ls
-    - ./cyber-dojo start-point ls | grep exercises
-
-    - npm install travis-ci
-    - script=trigger-build.js
-    - curl -O https://raw.githubusercontent.com/cyber-dojo/cyber-dojo/master/shared/${script}
-    - node ${script} cyber-dojo/web
+    - ./sh/travis_new_architecture.sh
+    - ./sh/travis_old_architecture.sh
