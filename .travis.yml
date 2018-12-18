@@ -12,7 +12,6 @@ script:
     # slow old architecture
     - curl -O https://raw.githubusercontent.com/cyber-dojo/commander/master/cyber-dojo
     - chmod +x cyber-dojo
-    - chmod +x cyber-dojo
 
     - whoami
     - sudo mkdir /cyber-dojo
