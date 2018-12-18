@@ -6,7 +6,7 @@
 The git repo for [cyber-dojo's](https://github.com/cyber-dojo/web)
 default exercises choices.
 
-<img src="https://github.com/cyber-dojo/start-points-exercises/blob/master/setup_exercises_start_point.png" width="700px"/>
+<img src="https://github.com/cyber-dojo/start-points-exercises/blob/master/docs/setup_exercises_start_point.png" width="700px"/>
 
 You can specify and use an alternative exercises start-point.
 
