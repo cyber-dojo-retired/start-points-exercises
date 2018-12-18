@@ -6,5 +6,5 @@ git:
   quiet: true
 
 script:
-    - ./sh/travis_new_architecture.sh
-    - ./sh/travis_old_architecture.sh
+    - ./_ci_scripts/travis_new_architecture.sh
+    - ./_ci_scripts/travis_old_architecture.sh
