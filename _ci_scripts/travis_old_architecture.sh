@@ -9,7 +9,7 @@ curl -O ${URL}
 chmod +x ./${SCRIPT}
 
 sudo mkdir /cyber-dojo
-sudo chown -R 19663:19663 /cyber-dojo
+sudo chown -R 19663:65533 /cyber-dojo
 
 readonly MY_URL=https://github.com/cyber-dojo/start-points-exercises.git
 ./${SCRIPT} start-point create exercises --git=${MY_URL}
