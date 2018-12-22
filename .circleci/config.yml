@@ -1,0 +1,27 @@
+version: 2
+jobs:
+  build-image:
+
+    machine:
+      enabled: true
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - run:
+          name: build docker image from start-points-exercises repo
+          command: |
+            set -e
+            ./pipe_build_up_test.sh
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build-image:
+          context: cyberdojo-context
+          filters:
+            branches:
+              only:
+                  - master
