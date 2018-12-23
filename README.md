@@ -6,9 +6,7 @@ Current architecture
 
 The git repo for [cyber-dojo's](https://github.com/cyber-dojo/web)
 default exercises choices.
-
 You can specify and use an alternative exercises start-point.
-
 Assuming the files in the specified repo have the
 [correct format](http://blog.cyber-dojo.org/2016/08/creating-your-own-start-points.html):
 
