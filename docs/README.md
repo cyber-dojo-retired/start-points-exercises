@@ -28,7 +28,10 @@ script. Viz, the second github URL option in this command:
 ```bash
 $ build_cyber_dojo_start_points_image.sh \
     acme/my-start-points \
-      https://github.com/cyber-dojo/start-points-languages.git \
-      https://github.com/cyber-dojo/start-points-exercises.git \
-      https://github.com/cyber-dojo/start-points-custom.git    \
+      --languages \
+        https://github.com/cyber-dojo-languages/csharp-nunit \      
+      --exercises \
+        https://github.com/cyber-dojo/start-points-exercises.git
+      --custom \
+        https://github.com/cyber-dojo/start-points-custom.git
 ```
