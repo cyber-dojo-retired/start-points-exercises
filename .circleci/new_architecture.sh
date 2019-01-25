@@ -16,9 +16,9 @@ chmod +x ./${SCRIPT}
 
 ./${SCRIPT} \
     ${MY_IMAGE_NAME} \
-    --${MY_TYPE} \
-      https://github.com/cyber-dojo/start-points-${MY_TYPE}.git \
-    --custom \
-      https://github.com/cyber-dojo/start-points-custom.git     \
-    --languages \
-      https://github.com/cyber-dojo-languages/csharp-nunit
+      --${MY_TYPE} \
+        https://github.com/cyber-dojo/start-points-${MY_TYPE}.git \
+      --custom \
+        https://github.com/cyber-dojo/start-points-custom.git     \
+      --languages \
+        https://github.com/cyber-dojo-languages/csharp-nunit
