@@ -21,6 +21,23 @@ jobs:
             docker push ${image}:${CIRCLE_SHA1:0:7}
             docker push ${image}:beta
 
+  deploy-image-to-beta:
+    docker:
+      - image: cyberdojo/gcloud-kubectl-helm
+    steps:
+      - run:
+          name: authenticate with gcloud and deploy with helm
+          command: |
+            set -e
+            echo $GCP_K8S_CREDENTIALS > /gcp/gcp-credentials.json
+            gcloud auth activate-service-account "$SERVICE_ACCOUNT" --key-file=/gcp/gcp-credentials.json
+            gcloud container clusters get-credentials "$CLUSTER" --zone "$ZONE" --project "$PROJECT"
+            helm init --client-only
+            helm repo add praqma https://praqma-helm-repo.s3.amazonaws.com/
+            helm upgrade --install --reuse-values --namespace=beta --set-string image.starter.tag=${CIRCLE_SHA1:0:7} beta-cyber-dojo praqma/cyber-dojo
+            #helm upgrade --install --namespace=beta --set-string image.starter.tag=${CIRCLE_SHA1:0:7} beta-cyber-dojo praqma/cyber-dojo
+
+
 workflows:
   version: 2
   build:
@@ -31,3 +48,7 @@ workflows:
             branches:
               only:
                   - master
+      - deploy-image-to-beta:
+          context: cyberdojo-context
+          requires:
+            - build-image
