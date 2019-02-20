@@ -1,3 +1,4 @@
 {
-  "display_name": "Recently Used List"
+  "display_name": "Recently Used List",
+  "visible_filenames": [ "instructions" ]  
 }

@@ -1,3 +1,4 @@
 {
-  "display_name": "Diversion"
+  "display_name": "Diversion",
+  "visible_filenames": [ "instructions" ]  
 }

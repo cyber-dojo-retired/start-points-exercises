@@ -1,3 +1,4 @@
 {
-  "display_name": "Harry Potter"
+  "display_name": "Harry Potter",
+  "visible_filenames": [ "instructions" ]  
 }

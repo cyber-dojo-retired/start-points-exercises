@@ -1,3 +1,4 @@
 {
-  "display_name": "Reversi"
+  "display_name": "Reversi",
+  "visible_filenames": [ "instructions" ]  
 }

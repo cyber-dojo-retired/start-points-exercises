@@ -1,3 +1,4 @@
 {
-  "display_name": "Monty Hall"
+  "display_name": "Monty Hall",
+  "visible_filenames": [ "instructions" ]  
 }

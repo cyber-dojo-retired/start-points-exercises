@@ -1,3 +1,4 @@
 {
-  "display_name": "Mine Field"
+  "display_name": "Mine Field",
+  "visible_filenames": [ "instructions" ]  
 }

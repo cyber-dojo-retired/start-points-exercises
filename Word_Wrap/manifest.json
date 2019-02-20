@@ -1,3 +1,4 @@
 {
-  "display_name": "Word Wrap"
+  "display_name": "Word Wrap",
+  "visible_filenames": [ "instructions" ]  
 }

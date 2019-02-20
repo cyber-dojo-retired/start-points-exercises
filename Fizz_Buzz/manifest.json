@@ -1,3 +1,4 @@
 {
-  "display_name": "Fizz Buzz"
+  "display_name": "Fizz Buzz",
+  "visible_filenames": [ "instructions" ]  
 }

@@ -1,3 +1,4 @@
 {
-  "display_name": "Anagrams"
+  "display_name": "Anagrams",
+  "visible_filenames": [ "instructions" ]  
 }

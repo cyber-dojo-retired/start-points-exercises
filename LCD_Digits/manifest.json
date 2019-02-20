@@ -1,3 +1,4 @@
 {
-  "display_name": "LCD Digits"
+  "display_name": "LCD Digits",
+  "visible_filenames": [ "instructions" ]  
 }

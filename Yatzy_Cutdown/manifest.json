@@ -1,3 +1,4 @@
 {
-  "display_name": "Yatzy Cutdown"
+  "display_name": "Yatzy Cutdown",
+  "visible_filenames": [ "instructions" ]  
 }

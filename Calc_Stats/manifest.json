@@ -1,3 +1,4 @@
 {
-  "display_name": "Calc Stats"
+  "display_name": "Calc Stats",
+  "visible_filenames": [ "instructions" ]  
 }

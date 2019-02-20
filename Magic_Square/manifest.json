@@ -1,3 +1,4 @@
 {
-  "display_name": "Magic Square"
+  "display_name": "Magic Square",
+  "visible_filenames": [ "instructions" ]  
 }

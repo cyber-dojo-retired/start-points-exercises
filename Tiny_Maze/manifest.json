@@ -1,3 +1,4 @@
 {
-  "display_name": "Tiny Maze"
+  "display_name": "Tiny Maze",
+  "visible_filenames": [ "instructions" ]  
 }

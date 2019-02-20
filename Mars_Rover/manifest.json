@@ -1,3 +1,4 @@
 {
-  "display_name": "Mars Rover"
+  "display_name": "Mars Rover",
+  "visible_filenames": [ "instructions" ]  
 }

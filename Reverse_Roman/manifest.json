@@ -1,3 +1,4 @@
 {
-  "display_name": "Reverse Roman"
+  "display_name": "Reverse Roman",
+  "visible_filenames": [ "instructions" ]  
 }

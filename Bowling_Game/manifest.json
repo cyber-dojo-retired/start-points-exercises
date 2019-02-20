@@ -1,3 +1,4 @@
 {
-  "display_name": "Bowling Game"
+  "display_name": "Bowling Game",
+  "visible_filenames": [ "instructions" ]  
 }

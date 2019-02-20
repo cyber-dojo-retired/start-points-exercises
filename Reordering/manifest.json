@@ -1,3 +1,4 @@
 {
-  "display_name": "Reordering"
+  "display_name": "Reordering",
+  "visible_filenames": [ "instructions" ]  
 }

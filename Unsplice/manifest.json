@@ -1,3 +1,4 @@
 {
-  "display_name": "Unsplice"
+  "display_name": "Unsplice",
+  "visible_filenames": [ "instructions" ]  
 }

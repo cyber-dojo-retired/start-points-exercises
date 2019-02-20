@@ -1,3 +1,4 @@
 {
-  "display_name": "Zeckendorf Number"
+  "display_name": "Zeckendorf Number",
+  "visible_filenames": [ "instructions" ]  
 }

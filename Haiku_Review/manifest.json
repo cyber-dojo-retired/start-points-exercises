@@ -1,3 +1,4 @@
 {
-  "display_name": "Haiku Review"
+  "display_name": "Haiku Review",
+  "visible_filenames": [ "instructions" ]  
 }

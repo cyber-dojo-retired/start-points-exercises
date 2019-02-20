@@ -1,3 +1,4 @@
 {
-  "display_name": "Count Coins"
+  "display_name": "Count Coins",
+  "visible_filenames": [ "instructions" ]  
 }

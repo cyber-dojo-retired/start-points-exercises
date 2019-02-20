@@ -1,3 +1,4 @@
 {
-  "display_name": "ISBN"
+  "display_name": "ISBN",
+  "visible_filenames": [ "instructions" ]  
 }

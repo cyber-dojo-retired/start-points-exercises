@@ -1,3 +1,4 @@
 {
-  "display_name": "Combined Number"
+  "display_name": "Combined Number",
+  "visible_filenames": [ "instructions" ]  
 }

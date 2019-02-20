@@ -1,3 +1,4 @@
 {
-  "display_name": "Friday 13th"
+  "display_name": "Friday 13th",
+  "visible_filenames": [ "instructions" ]  
 }

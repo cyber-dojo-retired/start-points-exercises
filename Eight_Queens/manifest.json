@@ -1,3 +1,4 @@
 {
-  "display_name": "Eight Queens"
+  "display_name": "Eight Queens",
+  "visible_filenames": [ "instructions" ]  
 }

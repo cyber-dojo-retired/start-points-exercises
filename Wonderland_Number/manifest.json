@@ -1,3 +1,4 @@
 {
-  "display_name": "Wonderland Number"
+  "display_name": "Wonderland Number",
+  "visible_filenames": [ "instructions" ]  
 }

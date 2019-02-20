@@ -1,3 +1,4 @@
 {
-  "display_name": "100 doors"
+  "display_name": "100 doors",
+  "visible_filenames": [ "instructions" ]  
 }

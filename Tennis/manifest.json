@@ -1,3 +1,4 @@
 {
-  "display_name": "Tennis"
+  "display_name": "Tennis",
+  "visible_filenames": [ "instructions" ]  
 }
