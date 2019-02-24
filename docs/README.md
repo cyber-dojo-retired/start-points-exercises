@@ -26,7 +26,7 @@ creating your own start-point image using the
 script. Viz, the second github URL option in this command:
 
 ```bash
-$ build_cyber_dojo_start_points_image.sh \
+$ cyber_dojo_start_points_create.sh \
     acme/my-start-points \
       --custom \
         https://github.com/cyber-dojo/start-points-custom
