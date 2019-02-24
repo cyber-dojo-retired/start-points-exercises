@@ -22,16 +22,16 @@ New architecture (currently live on https://beta.cyber-dojo.org only)
 
 This repo specifies the the default exercises start-points when
 creating your own start-point image using the
-[build_cyber_dojo_start_points_image.sh](https://github.com/cyber-dojo/start-points-base/blob/master/build_cyber_dojo_start_points_image.sh)
+[cyber_dojo_start_points_create.sh](https://github.com/cyber-dojo/start-points-base/blob/master/cyber_dojo_start_points_create.sh)
 script. Viz, the second github URL option in this command:
 
 ```bash
 $ build_cyber_dojo_start_points_image.sh \
     acme/my-start-points \
       --custom \
-        https://github.com/cyber-dojo/start-points-custom.git
+        https://github.com/cyber-dojo/start-points-custom
       --exercises \
-        https://github.com/cyber-dojo/start-points-exercises.git
+        https://github.com/cyber-dojo/start-points-exercises
       --languages \
         https://github.com/cyber-dojo-languages/csharp-nunit \      
 ```
